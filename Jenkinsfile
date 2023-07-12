@@ -6,7 +6,7 @@ pipeline{
     stages{
     stage('stage-1'){
       steps{
-        sh "mkdir/mnt/gol"
+        sh "mkdir /mnt/gol"
         sh "git clone https://github.com/yogitatupke/game-of-life.git /mnt/gol"
         sh "cd /mnt/gol/"
         sh "mvn clean install -DskipTests=true"
